@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Магазин</title>
+</head>
+<body>
+<header>
+        <h1>Магазин</h1>
+    </header>
+    <main>
+        <ul>
+            {% for item in items %}
+            <li>
+                {{ item.name }}
+                <button>Купить</button>
+            </li>
+            {% endfor %}
+        </ul>
+        <a href="http://127.0.0.1:8000/platform/" style="text-decoration: none;">
+        <button class="back-button">Вернуться назад</button>
+    </a>
+
+</body>
+</html>
