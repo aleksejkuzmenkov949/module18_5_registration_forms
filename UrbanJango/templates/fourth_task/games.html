@@ -1,0 +1,23 @@
+{% extends "fourth_task/menu.html" %}
+
+{% block pagename %} <h1>Магазин</h1> {% endblock %}
+
+{% block menu %}
+{{block.super}}
+{% endblock %}
+
+{% block content %}
+<main>
+    <ul>
+        {% for item in items %}
+            <li>
+                {{ item }} 
+                <button>Купить</button>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="http://127.0.0.1:8000/platform/" style="text-decoration: none;">
+        <button class="back-button">Вернуться назад</button>
+    </a>
+</main>
+{% endblock %}
